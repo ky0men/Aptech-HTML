@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  position: relative;
+  max-width: 700px;
+  padding: 16px 16px 50px 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name-work {
+  transform: rotate(270deg);
+  position: absolute;
+  top: 440px;
+  left: -360px;
+}
+.name h1 span {
+  font-weight: 600;
+}
+.name-work h2 {
+  position: absolute;
+  left: 600px;
+  bottom: 0;
+  font-size: 40px;
+}
+.name-work .name h1 {
+  font-size: 150px;
+  font-weight: 100;
+}
+
+.header div {
+  display: inline-block;
+  margin: 20px;
+  width: 25%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.bio,
+.skills {
+  max-width: 260px;
+}
+h3 {
+  color: goldenrod;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  margin-top: 80px;
+}
+.bio p,
+.edu p,
+.exp p {
+  margin-bottom: 16px;
+}
+.inline-dot {
+  margin: 8px 0;
+}
+.inline-dot div {
+  display: inline-block;
+}
+.inline-dot .content {
+  min-width: 90px;
+}
+.inline-dot .dot {
+  padding-left: 20px;
+}
+.skills i {
+  margin-right: 6px;
+  font-size: 12px;
+}
+.skills #dot-gray {
+  color: gray;
+}
+.img img {
+  width: 350px;
+}
+.img-up {
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  z-index: 3;
+}
+.img-down {
+  position: absolute;
+  top: 600px;
+  right: 20px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 300px solid goldenrod;
+  border-top: 300px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.content-tri {
+  position: absolute;
+  font-size: 15px;
+  color: black;
+  bottom: 46px;
+  right: 6px;
+  text-align: right;
+}
+.yellow-box {
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  border: 10px solid goldenrod;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 980px;
+  left: 700px;
+}
+.white-box {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 10px solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 846px;
+  left: 890px;
+}

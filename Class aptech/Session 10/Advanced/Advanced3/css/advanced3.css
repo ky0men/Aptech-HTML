@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  border: 1px solid whitesmoke;
+  box-shadow: -5px -5px gray;
+  margin: 40px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+}
+h1 {
+  margin: 60px 0;
+}
+.form-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.form-block {
+  position: relative;
+  flex: 1;
+  align-items: center;
+}
+.form-block .form-main input {
+  margin-bottom: 30px;
+
+  border: none;
+  border-bottom: 1px solid black;
+}
+.form-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-main .name {
+  display: flex;
+}
+.name .f-name {
+  margin-right: 12px;
+}
+
+#user-ico {
+  position: absolute;
+  top: 47px;
+  right: 0;
+}
+#email-ico {
+  position: absolute;
+  top: 94px;
+  right: 0;
+}
+#password-ico {
+  position: absolute;
+  top: 188px;
+  right: 0;
+}
+#cfpassword-ico {
+  position: absolute;
+  top: 235px;
+  right: 0;
+}
+#arrow-ico {
+  color: white;
+  position: absolute;
+  top: 342px;
+  right: 100px;
+}
+.img-block {
+  margin: 20px;
+}
+
+#btn {
+  padding: 16px 36px;
+  width: 60%;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin: 40px auto 0 auto;
+}

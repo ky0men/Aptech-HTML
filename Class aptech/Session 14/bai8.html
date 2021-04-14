@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <script>
+        var songuyenduong = [];
+        for (var a = 0; a < 10; a++){
+            b = prompt('Hãy nhập số nguyên dương thứ ' + (a + 1));
+            if (b == Math.round(b) && b > 0){
+                songuyenduong.push(b);
+                document.write('Số nguyên dương thứ ' + (a + 1) + ' bạn nhập là: ' + b + '<br>');
+                continue;
+            }else{
+                alert('Số bạn nhập không đúng. Hãy nhập lại!');
+                a--
+                console.log(songuyenduong)
+            }
+        }
+
+        document.write('Thứ tự sau khi sắp ngược lại là: ');
+        for (var i = 9; i >= 0; i-- ){
+            document.write(songuyenduong[i] + ', ');
+            
+        }
+        document.write('<br>');
+        document.write('Thứ tự sau khi sắp ngược vị trí chẵn là: ');
+        for (var j = 0; j < 10; j++){
+            if (j % 2 == 0){
+                document.write(songuyenduong[j]+ ', ');
+                continue
+            }else{
+                document.write(songuyenduong[songuyenduong.length - j] + ', ');
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

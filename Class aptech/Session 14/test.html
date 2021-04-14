@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var std165 = new Array(10);
+        // for (var i = 0; i < std165.length; i++){
+        //     std165[i] = prompt('Nhập tên người thứ ' + (i + 1) + ':');
+        // }
+        // for (var i = 0; i < std165.length; i++){
+        //     document.write(std165[i] + '<br>')
+        // }
+        var dtb = new Array(10);
+        for (var i = 0; i < dtb.length; i++){
+            dtb[i] =prompt('Nhập điểm trung bình của học sinh thứ ' + (i + 1) + ':');
+            
+        }
+        for (var i = 0; i < dtb.length; i++){
+            document.write(dtb[i] + '<br>');
+        }
+        var min = dtb[0];
+        for (var i = 0; i < dtb.length; i++){
+            if (min > dtb[i]){
+                min = dtb[i];
+            }
+        }
+        document.write('Diem trung binh nho nhat la: ' + min);
+
+        var max = dtb[0];
+        for (var i = 0; i < dtb.length; i++){
+            if (max < dtb[i]){
+                max = dtb[i];
+            }
+        }
+        document.write('Diem trung binh lon nhat la: ' + min);
+        var avg=0;
+        for (var i = 0; i <= dtb.length; i++){
+            avg += dtb[i]
+        }
+        document.write('Diem trung binh chung cua lop la: ' + (avg/dtb.length));
+    </script>
+</body>
+</html>

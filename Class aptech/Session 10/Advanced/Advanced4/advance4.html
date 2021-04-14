@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/advanced4.css">
+    <title>Advanced 4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img-block">
+            <img src="./img/studentRegistrationForm.jpg" alt="Table Image">
+        </div>
+        <div class="form-block">
+            <h3>STUDENT REGISTRATION FORM</h3>
+            <form class="form-main">
+                <div class="name">
+                    <div class="f-name">
+                        <label>Name: </label> <br>
+                        <input type="text">
+                    </div>
+                    <div class="l-name">
+                        <label>Father Name: </label> <br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="address">
+                    <label>Address: </label><br>
+                    <input type="text">
+                </div>
+                <div class="genderx">
+                    <label>Gender: </label>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </div>
+                <div class="place">
+                    <div class="place-state">
+                        <label>State: </label><br>
+                        <input list="state" id="state-choice"/>
+                        <datalist id="state">
+                            <option value="Kentucky">
+                            <option value="Massachusetts">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+                    <div class="place-city">
+                        <label>City: </label> <br>
+                        <input list="city" id="city-choice"/>
+                        <datalist id="city">
+                            <option value="New York">
+                            <option value="Los Angeles">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+                    
+                </div>
+                <div>
+                    <label>DOB: </label> <br>
+                    <input type="date">
+                </div>
+                <div>
+                    <label>Pincode: </label> <br>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Course: </label><br>
+                    <input list="course" id="course-choice"/>
+                    <datalist id="course">
+                        <option value="Java">
+                        <option value="PHP">
+                        <option value="Other">
+                    </datalist>
+                </div>
+                <div>
+                    <label>Email ID: </label> <br>
+                    <input type="email">
+                </div>
+                <div class="all-button">
+                    <div class="all-left">
+
+                    </div>
+                    <div class="all-right">
+                        <input class="rs-btn" type="reset" value="Reset all">
+                        <input class="btn" type="submit" value="Submit Form">
+                    </div>
+                    
+                </div>
+                
+            </form>
+
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+#btn {
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+.section-up,
+.section-down {
+  text-align: center;
+}
+section {
+  border: 1px solid #ccc;
+  width: 400px;
+  padding: 24px;
+  display: inline-block;
+}
+.section-down section {
+  width: 300px;
+}
+#export-area {
+  background-color: aquamarine;
+  height: 80px;
+  text-align: center;
+  padding: 24px;
+  color: red;
+}

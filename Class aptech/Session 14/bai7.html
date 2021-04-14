@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+<body>
+    <script>
+        var sole = [];
+        for (var a = 0; a < 10; a++){
+            b = prompt('Hãy nhập số lẻ dương thứ ' + (a + 1));
+            if (b % 2 != 0 && b > 0){
+                sole.push(b);
+                document.write('Số lẻ thứ ' + (a + 1) + ' bạn nhập là: ' + b + '<br>');
+                continue;
+            }else{
+                alert('Số bạn nhập không đúng. Hãy nhập lại!');
+                a--
+                console.log(sole)
+            }
+            
+        }
+        var sumf5 = 0;
+        for (var i = 0; i < 5; i++){
+            sumf5 += parseInt(sole[i]);
+        }
+        document.write('<h3>' + 'Tổng 5 số lẻ đầu tiên là: ' + sumf5 + '</h3>');
+
+        var suml5 = 0;
+        for (var j = 9; j >= 5; j--){
+            suml5 += parseInt(sole[j]);
+        }
+        document.write('<h3>' +'Tổng 5 số lẻ cuối là: ' + suml5 + '</h3>');
+    </script>
+</body>
+</html>

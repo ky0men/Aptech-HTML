@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var std165 = new Array(10);
+        // for(var i = 0; i<std165.length; i++){
+        //     std165[i] = prompt("Nhap ten nguoi thu "+ (i+1) +": ");
+        // }
+        // for(var i = 0; i<std165.length; i++){
+        //     document.write(std165[i]+"<br>");
+        // }
+        var dtb = new Array(5);
+        for(var i in dtb){
+            dtb[i] = parseFloat(prompt("Nhap diem trung binh cua HS thu "+ (i+1) +": "));
+        }
+        document.write("<h2>Danh sach diem thi lop 165</h2>");
+        for(var i = 0; i<dtb.length; i++){
+            document.write(dtb[i]+"<br>");
+        }
+        document.write("<br>");
+
+        var min = dtb[0];
+        for(var i = 0; i<dtb.length; i++){
+            if(min > dtb[i]) min = dtb[i];
+        }
+        document.write("<br>");
+
+        document.write("<br>Diem trung binh nho nhat lop 165 la: "+min);
+        var max = dtb[0];
+        for(var i = 0; i<dtb.length; i++){
+            if(max < dtb[i]) max = dtb[i];
+        }
+        document.write("<br>");
+
+        document.write("<br>Diem trung binh lon nhat lop 165 la: "+max);
+        var avg = 0;
+        for(var i = 0; i<dtb.length; i++){
+            avg += dtb[i];
+        }
+        avg /= dtb.length;
+        document.write("<br>");
+
+        document.write("<br>Diem trung binh chung cua lop 165 la: "+(avg));
+    </script>
+</body>
+</html>

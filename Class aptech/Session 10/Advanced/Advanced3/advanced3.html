@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/advanced3.css">
+    <title>Advanced 3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img-block">
+            <img src="./img/signup.jpg" alt="Table Image">
+            
+        </div>
+        <div class="form-block">
+            <h1>REGISTRATION FORM</h1>
+            <form class="form-main">
+                <div class="name">
+                    <div class="f-name">
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="l-name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                </div>
+               
+                <input class="username" type="text" placeholder="User Name">
+                <i class="fas fa-user" id="user-ico"></i>
+                <input type="email" placeholder="Email Address">
+                <i class="fas fa-envelope" id="email-ico"></i>
+                <input list="gender" id="gender-choice" name="Gender" placeholder="Gender" />
+                    <datalist id="gender">
+                        <option value="Male">
+                        <option value="Female">
+                        <option value="Other">
+                    </datalist>
+                <input type="password" placeholder="Password">
+                <i class="fas fa-unlock-alt" id="password-ico"></i>
+                <input type="password" placeholder="Confirm Password">
+                <i class="fas fa-lock" id="cfpassword-ico"></i>
+                <i class="fas fa-arrow-right" id="arrow-ico"></i>
+                <input id="btn" type="submit" value="Register">
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

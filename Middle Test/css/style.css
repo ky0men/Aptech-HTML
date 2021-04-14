@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+/* Begin Nav */
+header {
+  height: 56px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+}
+
+.header-left {
+  position: absolute;
+}
+.header-left img {
+  width: 200px;
+  height: 110px;
+}
+
+.header-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 44px;
+  margin-right: 16px;
+}
+.header-right li {
+  display: inline-block;
+}
+.header-right a {
+  text-decoration: none;
+  color: #838080;
+  padding: 4px 8px;
+  border-left: 1px solid #838080;
+  text-transform: uppercase;
+}
+
+.header-right li:hover a {
+  background-color: yellowgreen;
+  color: black;
+}
+/* End Nav */
+.cover {
+  background: url(../img/banner1.png) top center / cover no-repeat;
+  padding-top: 30%;
+  margin-top: 60px;
+}
+.content {
+  display: flex;
+  margin-top: 24px;
+}
+/* begin left column */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 40px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  background-color: yellowgreen;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.title h3 {
+  text-transform: uppercase;
+  padding-top: 6px;
+}
+.title .food-logo img {
+  width: 40px;
+}
+.food-content {
+  border-bottom: 1px solid #838080;
+}
+.food-content .orange-content {
+  color: orange;
+  padding: 16px 0;
+}
+.content-img {
+  display: flex;
+  margin-bottom: 16px;
+}
+.content-img img {
+  width: 150px;
+  margin-right: 12px;
+}
+.content-list li {
+  list-style-type: square;
+  font-weight: 700;
+}
+.content-list {
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+/* End left column */
+/* Begin middle column */
+.center-column {
+  display: flex;
+  flex: 1;
+  margin-right: 40px;
+}
+.center-column {
+  display: flex;
+  flex-direction: column;
+  color: orange;
+}
+.content-up {
+  padding-bottom: 36px;
+  border-bottom: 1px solid #838080;
+}
+.content-up img {
+  width: 100%;
+  margin-top: 12px;
+}
+.bolder {
+  text-transform: uppercase;
+  color: black;
+  background-color: yellowgreen;
+}
+/* End middle column */
+
+/* Begin right column */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.right-column li {
+  margin-left: 60px;
+  background-color: yellowgreen;
+  list-style-type: none;
+  margin-top: 24px;
+  padding: 4px 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.end-content {
+  margin-bottom: 36px;
+}
+/* End right column */
+.address {
+  display: flex;
+  border-bottom: 1px solid #838080;
+  margin: 40px 0;
+  padding: 24px 0;
+}
+
+.address img {
+  width: 120px;
+}
+.content-footer {
+  flex: 1;
+}
+.address-img {
+  flex: 1;
+}
+.address-phone {
+  flex: 1;
+  text-align: right;
+}
+hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

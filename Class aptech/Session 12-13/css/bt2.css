@@ -1,0 +1,55 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 40%;
+  border: 1px solid #046582;
+  color: #046582;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px #046582;
+  margin: 60px auto 0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.form {
+  text-align: center;
+}
+.container div label {
+  display: inline-block;
+  min-width: 120px;
+  margin-bottom: 16px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.container div input {
+  width: 40%;
+  border-style: inset;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: whitesmoke;
+  padding: 4px 0;
+}
+
+.button {
+  text-align: center;
+}
+.button input.btn {
+  color: white;
+  background-color: #046582;
+  width: 30%;
+  margin: 12px;
+  padding: 16px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button input.btn:hover {
+  color: yellowgreen;
+  box-shadow: 2px 2px 6px #046582;
+}
+.button input.btn:focus {
+  outline: 0;
+}

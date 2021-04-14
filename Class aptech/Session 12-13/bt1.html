@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bt1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Bài Tập 1</title>
+</head>
+<body>
+    <form class="container">
+        <h1>Infomation Form</h1>
+        <div class="form">
+
+            <div>
+                <label>Tên: </label>
+                <input id="namejs" type="text">
+            </div>
+            <div>
+                <label>Email: </label>
+                <input id="emailjs" type="email">
+            </div>
+            <div>
+                <label for="">Số điện thoại: </label>
+                <input id="phonejs" type="text">
+            </div>
+            <div>
+                <label>Địa chỉ: </label>
+                <input id="addressjs" type="text">
+            </div>
+            <div>
+                <label>Skype: </label>
+                <input id="skypejs" type="text">
+            </div>
+        </div>
+        <div class="button">
+            <input class="btn" type="submit" value="Show Infomation" onclick="show(); return false">
+            <input class="btn" type="reset" value="Reset">
+            
+        </div>
+    </form>
+    <div id="result"></div>
+    <script src="./js/bt1.js"></script>
+</body>
+</html>

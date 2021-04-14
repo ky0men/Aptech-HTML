@@ -1,0 +1,8 @@
+$(document).ready(function(){
+  $(".hide-content").click(function(){
+    $("p").hide("slow");
+  });
+  $(".show-content").click(function(){
+    $("p").show(1500)
+  });
+});

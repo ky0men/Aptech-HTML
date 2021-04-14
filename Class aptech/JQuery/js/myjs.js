@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $("#switch").click(function(){
+    $("p").toggle("fast");
+  })
+  $(".hide-content").click(function(){
+    $("p").hide("slow");
+  });
+  $(".show-content").click(function(){
+    $("p").show(1500);
+  });
+});

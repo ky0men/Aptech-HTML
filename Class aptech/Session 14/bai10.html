@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10</title>
+</head>
+<body>
+    <script>
+        var n =  prompt('Nhập số phần tử của mảng: ');
+        var mang = [];
+        for (var i = 0; i < n; i++){
+            var a = prompt('Hãy nhập số nguyên dương thứ ' + (i + 1));
+            if (a == Math.round(a) && a > 0){
+                mang[i] = a;
+            }else{
+                alert('Số bạn nhập không đúng. Hãy nhập lại!');
+                i--;
+            }
+        }
+        document.write('Mảng đã được nhập là: ' + mang + '<br>');
+        console.log(mang);
+
+        document.write('Các số chẵn ở vị trí chẵn là: ');
+        var tongchan = 0;
+        for (var i = 1; i < n; i = i + 2){
+            if (mang[i] % 2 == 0){
+               document.write(mang[i] +', ');
+               tongchan += parseInt(mang[i]);
+            }
+        }
+        document.write('<br>');
+
+        document.write('Các số lẻ ở vị trí lẻ là: ');
+        var tongle = 0;
+        for (var i = 0; i < n; i = i + 2){
+            if (mang[i] % 2 != 0){
+               document.write(mang[i] +', '); 
+               tongle += parseInt(mang[i]);
+            }
+        }
+        document.write('<br>');
+        document.write('<div style= "color: red">Tổng các số chẵn vị trí chẵn là: ' + tongchan + '</div>');
+        
+        document.write('<div style= "color: blue"> Tổng các số lẻ ở vị trí lẻ là: ' + tongle + '</div>');
+        
+        var mangsort = mang;
+        mangsort.sort(function(a,b){
+            return parseInt(a) - parseInt(b);
+        })
+        var max = mangsort[n-1];
+        var min = mangsort[0];
+        var secondmax = mangsort[n-2];
+        var secondmin = mangsort[1];
+        for (var i in mangsort){
+            if (mangsort[i] > min){
+                secondmin = mangsort[i];
+                break;
+            }
+
+        }
+        for(var i = n -1; n >= 0; i--){
+            if (mangsort[i] < max){
+                secondmax = mangsort[i];
+                break;
+            }
+        }
+        
+        document.write('<div style= "color: red">Số lớn nhất trong mảng là: ' + max + '</div>');
+        document.write('<div style= "color: blue">Số lớn nhỏ trong mảng là: ' + min + '</div>');
+        var x = prompt('Hãy nhập vào số x bất kỳ: ');
+        document.write('Số x là: ' + x)
+        var manglonx = [];
+        var mangnhox = [];
+        for(var i in mang){
+            if(x > parseInt(mang[i])){
+                mangnhox.push(mang[i]);
+            } else if(x < parseInt(mang[i])){
+                manglonx.push(mang[i]);
+            }
+
+        }
+        document.write('<div style= "color: red">Các số lớn hơn ' + x + ' là: ' + manglonx + '</div>');
+        document.write('<div style= "color: blue">Các số nhỏ hơn ' + x + ' là: ' + mangnhox + '</div>');
+       
+        document.write('<div style= "color: red">Số lớn thứ 2 trong mảng là: ' + secondmax + '</div>');
+        document.write('<div style= "color: blue">Số lớn nhỏ thứ 2 trong mảng là: ' + secondmin + '</div>');
+        document.write('<div style= "color: red">Các số trùng nhau trong mảng là: </div>');
+
+        for (var i in mang){
+            for( var j = ++i; j < n; j++){
+                if (mang[i] === mang[j]){
+                    document.write(mang[i]);
+                }
+            }
+           
+        }
+
+    </script>
+</body>
+</html>

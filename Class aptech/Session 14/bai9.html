@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9</title>
+</head>
+<body>
+    <script>
+        var matran = [];
+        
+        for (i = 0; i < 4; i++){
+            for (j = 0; j < 4; j++){
+                var matrancon = prompt('Hãy nhập giá trị ma trận tại vị trí' + (i + 1) + 'x' + (j + 1), 0);
+                document.write(matrancon + ' ');
+                matran.push(matrancon);
+            }
+            document.write('<br>');
+        }
+        console.log(matran);
+        console.log(typeof parseInt(matran[3]));
+        var b = 0;
+        for (var a in matran){
+            if (matran[a] % 2 == 0){
+                continue
+            }else{
+                b = b + 1;
+            }
+        }
+        document.write('<div style = "color:red">' + 'Số số lẻ trong ma trận là: ' + b + '<br>' + '</div>');
+        var m = 0;
+        for (var x = 1; x < 5; x++){
+            for (var y = x*4 - 1; y >= (x*4 - 4); y--){
+                m += parseInt(matran[y]);
+                
+            }
+            
+            document.write('Tổng dòng ' + x + ' của ma trận là: ' + m + '<br>');
+            m = 0;
+        }
+        var min = Infinity;
+        var max = -Infinity;
+        for (var n in matran){
+            
+            if (min > parseInt(matran[n])){
+                min = matran[n];
+            }
+            
+            if (max < matran[n]){
+                max = parseInt(matran[n]);
+            }
+        }
+        document.write('<div style = "color:blue">' + 'Số nhỏ nhất trong ma trận là: ' + min  + '</div>');
+        document.write('<div style = "color:red">' + 'Số lớn nhất trong ma trận là: ' + max  + '</div>');
+
+
+        var l = 0;
+        var k = 0;
+        var t = 0;
+        var z = 3;
+        while (t < matran.length){
+            l += parseInt(matran[t]);
+            t += 5;
+        }
+        while (z < matran.length - 3){
+            k += parseInt(matran[z]);
+            z += 3;
+        }
+        document.write('<div style = "color:blue">' + 'Tổng 2 đường chéo ma trận là: ' + (l + k)  + '</div>');
+
+        document.write('<div style = "color:red"> Vị trí các số lớn hơn 5 trong ma trận là: </div>');
+        for (var q = 0; q < 4; q++){
+            if (matran[q] > 5){
+               document.write('1x' + q + ', ');
+            }
+        }
+        for (var e = 4; e < 8; e++){
+            if (matran[e] > 5){
+               document.write('2x' + (e - 3) + ', ');
+            }
+        }
+        for (var r = 8; r < 12; r++){
+            if (matran[r] > 5){
+               document.write('3x' + (r - 7) + ', ');
+            }
+        }
+        for (var p = 12; p < 16; p++){
+            if (matran[p] > 5){
+               document.write('4x' + (p - 11) + ', ');
+            }
+        }
+    </script>
+</body>
+</html>
